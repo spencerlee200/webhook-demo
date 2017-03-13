@@ -7,6 +7,6 @@ module.exports = (express) => {
     });
   });
 
-  router.use('/webhooks/', require('./webhooks')(express))
+  router.use('/webhook/', require('./webhooks')(express))
   return router;
 };
